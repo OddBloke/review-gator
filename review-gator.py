@@ -157,7 +157,7 @@ def date_to_age(date):
         return None
 
     age = NOW - date
-    if age > ONE_DAY:
+    if age >= ONE_DAY:
         return '{} days'.format(age.days)
     if age > ONE_HOUR:
         return '{} hours'.format(age.seconds / 3600)
